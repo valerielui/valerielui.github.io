@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #1a1918;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'inconsolata', monospace;
+    color: white;
+    overflow-x: hidden;
+}
+.kepler {
+    font-family: 'kepler-std', serif;
+    font-style: italic;
+    letter-spacing: .5px;
+    font-weight: 700;
+}
+nav {
+    height: 10vh;
+    width: 100%;
+    background-color: #0d0d0c;
+/*    opacity: 0.75;*/
+    position: fixed;
+    z-index: 1;
+}
+.navcont2 {
+    display: flex;
+    height: 10vh;
+    width: 80%;
+    margin: 0 10%;
+    justify-content: space-between;
+    z-index: 10000;
+    align-items: center;
+}
+.navleft p, .navleft a, .navright p, .navright a {
+    color: white;
+    text-decoration: none;
+}
+nav div {
+    display: flex;
+}
+.navleft p:nth-child(2), .navright p:nth-child(2) {
+    margin: 0 1rem;
+}
+#val {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#val a {
+    text-decoration: none;
+    color: white;
+}
+.sun, .moon {
+    color: white;
+}
+.about {
+    display: flex;
+    width: 80%;
+    margin: 0 10%;
+    padding: 15vh 0 0 0;
+    align-items: center;
+}
+.about .col1 {
+    width: 30%;
+}
+.about .col1 img {
+    width: 100%;
+}
+.about .col2 {
+    width: 60%;
+    margin-left: 10%;
+}
+.header {
+    font-family: 'kepler-std', serif;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    line-height: 2.3rem;
+}
+.footer {
+    margin-top: 5vh;
+    height: 20vh;
+    background-color: #0d0d0c;
+    width: 100%;
+/*    opacity: 0.75;*/
+}
+.footercont {
+    width: 80%;
+    margin: 0 10%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+.footercont p {
+    width: 100%;
+    text-align: center;
+}
+.footercont p span {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+.footercont a {
+    text-decoration: none;
+    color: white;
+}
+.navleft a:hover, .footercont a:hover {
+    text-decoration: line-through;
+}
+
+
+/*project*/
+.hero {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    object-fit: cover;
+}
+.hero video {
+    object-fit: cover;
+    width: 125%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hero img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.width {
+    width: 80%;
+    margin: 0 10%;
+}
+.hero-cont {
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+}
+.project-title {
+    font-family: 'kepler-std';
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 2.8rem;
+    line-height: 3rem;
+}
+.project-desc {
+    display: flex;
+    padding: 5rem 0;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dashed #ffffff;
+}
+.project-desc span {
+    margin: 0 1rem;
+}
+.project-desc-col {
+    width: auto;
+}
+.project-txt {
+    margin-top: 5rem;
+}
+.proj-body {
+    margin-bottom: 5rem;
+}
+#test {
+    display: none;
+}
+.divider {
+    margin: 5rem 10%;
+    text-align: center;
+}
+.sun {
+    display: block;
+}
+.moon {
+    display: none;
+}
+.sun:hover {
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: ease;
+    transition-duration: 1s;
+}
+.moon:hover {
+    cursor: pointer;
+    transform: rotate(-30deg);
+    transition: ease;
+    transition-duration: 1s;
+}
+.project a {
+    color: white;
+}
+li {
+    list-style-position: outside;
+}
+.proj-body-no-sp {
+    margin: 0;
+}
+.indent {
+    margin-left: 1rem;
+    list-style: circle;
+}
+ul {
+    margin-left: 1rem;
+    width: calc(80%-1rem);
+}
+.grid {
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+}
+.grid span {
+    display: flex;
+    justify-content: space-between;
+}
+.grid span:nth-child(1) {
+    margin-right: 5%;
+}
+.grid-item {
+    width: 45%;
+}
+.grid-item img {
+    width: 100%;
+}
+figcaption {
+    color: gray;
+    font-size: .9rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .about {
+        flex-direction: column;
+    }
+    .about .col1, .about .col2 {
+        margin: 0 0 0 0;
+        padding: 0;
+        width: 100%;
+    }
+    .about .col1 {
+        margin-bottom: 3rem;
+    }
+    .footer {
+        position: relative;
+    }
+    .project-desc {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .project-desc span {
+        margin: 1rem 0;
+    }
+    .grid {
+        flex-direction: column;
+    }
+    .grid-item {
+        width: 45%;
+    }
+    .grid span:nth-child(1) {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
