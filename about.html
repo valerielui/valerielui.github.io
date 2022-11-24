@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PPWW083PS"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-3PPWW083PS');
+        </script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+<!--        <link rel="icon" href="#">-->
+        <link rel="stylesheet" href="https://use.typekit.net/pyi3esy.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7ed9debe52.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <title>about | Valerie Lui</title>
+        <meta name="keywords" content="Valerie Lui, Valerie, USC, Valerie Lui USC, USC Marshall, Marshall School of Business, Daily Trojan">
+        <meta name="description" content="a digital receipt of my recent accomplishments :-)">
+        <meta name="theme-color" content="#1a1918">
+        <meta property="og:site_name" content="Valerie Lui">
+        <meta property="og:title" content="Valerie Lui">
+        <meta property="og:description" content="a digital receipt of my recent accomplishments :-)">
+        <meta property="og:type" content="website">
+<!--        <meta property="og:image" content="">-->
+<!--        <meta property="og:url" content="https://valerielui.com/ox-stickers">-->
+        <link rel="stylesheet" type="text/css" href="nav.css">
+    </head>
+    
+    <body class="maincolor">
+        <nav class="midcolor">
+            <div class="navcont">
+                <div class="navcont2">
+                    <div class="navleft">
+                        <p class="subcolor"><a href="/">work</a></p>
+                        <p class="subcolor">/</p>
+                        <p class="subcolor"><a href="/about">about</a></p>
+                    </div>
+                    <p id="val" class="kepler subcolor"><a href="#">valerie lui</a></p>
+                    <div class="navright">
+                        <i class="fa-solid fa-sun sun mode"></i>
+                        <i class="fa-solid fa-moon moon mode"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <section class="about">
+            <div class="col1">
+                <img src="assets/me.jpg" alt="a picture of me">
+            </div>
+            <div class="col2">
+                <h1 class="header subcolor">about me</h1>
+                <br>
+                <p class="subcolor">for as long as i’ve remembered, i’ve loved getting my hands dirty with painting, handicrafts, woodworking, graphic designing (just to name a few). most recently i picked up coding websites, which i see as a good mesh of my passion for designing and desire to push myself out of my comfort zone by learning new skills and experimenting with a new medium. while i’m by no means an expert, i have fun with it — and this website is the result of that. enjoy!
+                    <br><br>
+                    <b>drink of choice:</b> iced oatmilk matcha or vanila latte<br>
+                    <b>favorite restaurant at the moment:</b> sun nong dan<br>
+                    <b>favorite season:</b> summer<br>
+                    <b>hobbies:</b> film photography, graphic design<br>
+                    <b>currently learning more about:</b> AI, web3
+                    </p>
+            </div>
+        </section>
+        
+        <footer class="footer midcolor">
+            <div class="footercont">
+                <p class="subcolor"><span class="kepler">let's connect!</span><br>
+                <a href="mailto:vlui@usc.edu">email</a> / <a href="https://www.linkedin.com/in/valerie-lui/">linkedin</a></p>
+            </div>
+        </footer>
+        
+        <script>
+            // dark mode light mode
+                $('.mode').on('click', function() {
+                    var elementColor = $('.subcolor').css('color');
+                    // changing to light mode
+                    // if in dark mode
+                    if (elementColor == 'rgb(255, 255, 255)') {
+                        $('.maincolor').css('background-color','#dbd6d3');
+                        $('.subcolor').css('color','#1a1918');
+                        $('.midcolor').css('background-color', '#d1cbc7');
+                        $('#nav3').css('color','#1a1918');
+                        $('a').css('color','#1a1918');
+                        $('#abt1').css('border','1px dashed #1a1918');
+                        $('.mode').css('color','#1a1918');
+                        $('.sun').css('display','none');
+                        $('.moon').css('display','block');
+                        $('.project-desc').css('border-bottom-color', '#000000');
+                    } // if in light mode 
+                    else if (elementColor != 'rgb(255, 255, 255)') {
+                        $('.maincolor').css('background-color','#1a1918');
+                        $('.subcolor').css('color','white');
+                        $('.midcolor').css('background-color', '#0d0d0c');
+                        $('#nav3').css('color','white');
+                        $('a').css('color','white');
+                        $('#abt1').css('border','1px dashed white');
+                        $('.mode').css('color','white');
+                        $('.sun').css('display','block');
+                        $('.moon').css('display','none');
+                        $('.project-desc').css('border-bottom-color', '#ffffff');
+                    };
+                });
+        </script>
+    </body>
+</html>
