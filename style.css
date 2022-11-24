@@ -380,8 +380,14 @@ h1, h2, h3, h4, h5, h6, p {
     }
 }
 @media only screen and (max-width: 600px) {
+    .home {
+        overflow: hidden;
+    }
     #box {
         width:90%!important;
+    }
+    .cont {
+        width: 95%;
     }
     .mobilenav {
         height: 100vh;
