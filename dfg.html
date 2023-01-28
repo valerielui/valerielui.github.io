@@ -10,7 +10,7 @@
           gtag('config', 'G-3PPWW083PS');
         </script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
-<!--        <link rel="icon" href="#">-->
+        <link rel="icon" href="assets/favicon.png">
         <link rel="stylesheet" href="https://use.typekit.net/pyi3esy.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
         <meta name="viewport" content="width=device-width" initial-scale="1.0">
         <link rel="stylesheet" type="text/css" href="nav.css">
         <title>develop for good | Valerie Lui</title>
-        <meta name="keywords" content="Valerie Lui, Valerie, USC, Valerie Lui USC, USC Marshall, Marshall School of Business, Daily Trojan">
+        <meta name="keywords" content="Valerie Lui, Valerie, USC, Valerie Lui USC, USC Marshall, Marshall School of Business, Daily Trojan, online projects editor, online projects">
         <meta name="description" content="a digital receipt of my recent accomplishments :-)">
         <meta name="theme-color" content="#1a1918">
         <meta property="og:site_name" content="Valerie Lui">
@@ -39,6 +39,8 @@
                         <p class="subcolor"><a href="/">work</a></p>
                         <p class="subcolor">/</p>
                         <p class="subcolor"><a href="/about">about</a></p>
+                        <i class="fa-solid fa-bars burger subcolor" id="o"></i>
+                        <i class="fa-solid fa-x burger subcolor" id="x"></i>
                     </div>
                     <p id="val" class="kepler subcolor"><a href="/">valerie lui</a></p>
                     <div class="navright">
@@ -46,8 +48,18 @@
                         <i class="fa-solid fa-moon moon mode"></i>
                     </div>
                 </div>
+                
             </div>
         </nav>
+
+        <div class="panel maincolor">
+            <div id="panelcont">
+                <a class="subcolor" href="/">work</a>
+                <a class="subcolor" href="/about">about</a>
+                <a class="subcolor" href="mailto:vlui@usc.edu">/email</a>
+                <a class="subcolor" href="https://www.linkedin.com/in/valerie-lui/">/linkedin</a>
+            </div>
+        </div>
         
         <div class="project dt">
             <section class="hero">
@@ -153,6 +165,25 @@
                     };
                 });
             });
+
+            // open nav
+            $('.burger').on('click', function() {
+                    var displayEl = $('.panel').css('display');
+                    if (displayEl == 'none') {
+                        $('.panel').css('display','block');
+                        $('body').css('overflow','hidden');
+                        $('#o').css('display','none');
+                        $('#x').css('display','block');
+                    } // close nav
+                    else if (displayEl == 'block') {
+                        $('.panel').css('display','none');                        $('body').css('overflow','hidden');
+                        $('body').css('overflow','visible');
+                        $('#o').css('display','block');
+                        $('#x').css('display','none');
+
+                    };
+                    
+                });
         </script>
     </body>
 </html>

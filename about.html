@@ -10,7 +10,7 @@
           gtag('config', 'G-3PPWW083PS');
         </script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
-<!--        <link rel="icon" href="#">-->
+        <link rel="icon" href="assets/favicon.png">
         <link rel="stylesheet" href="https://use.typekit.net/pyi3esy.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
         <script src="https://kit.fontawesome.com/7ed9debe52.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width" initial-scale="1.0">
         <title>about | Valerie Lui</title>
-        <meta name="keywords" content="Valerie Lui, Valerie, USC, Valerie Lui USC, USC Marshall, Marshall School of Business, Daily Trojan">
+        <meta name="keywords" content="Valerie Lui, Valerie, USC, Valerie Lui USC, USC Marshall, Marshall School of Business, Daily Trojan, online projects editor, online projects">
         <meta name="description" content="a digital receipt of my recent accomplishments :-)">
         <meta name="theme-color" content="#1a1918">
         <meta property="og:site_name" content="Valerie Lui">
@@ -30,7 +30,7 @@
         <link rel="stylesheet" type="text/css" href="nav.css">
     </head>
     
-    <body class="maincolor">
+    <body class="proj-cont maincolor">
         <nav class="midcolor">
             <div class="navcont">
                 <div class="navcont2">
@@ -38,15 +38,27 @@
                         <p class="subcolor"><a href="/">work</a></p>
                         <p class="subcolor">/</p>
                         <p class="subcolor"><a href="/about">about</a></p>
+                        <i class="fa-solid fa-bars burger subcolor" id="o"></i>
+                        <i class="fa-solid fa-x burger subcolor" id="x"></i>
                     </div>
-                    <p id="val" class="kepler subcolor"><a href="#">valerie lui</a></p>
+                    <p id="val" class="kepler subcolor"><a href="/">valerie lui</a></p>
                     <div class="navright">
                         <i class="fa-solid fa-sun sun mode"></i>
                         <i class="fa-solid fa-moon moon mode"></i>
                     </div>
                 </div>
+                
             </div>
         </nav>
+
+        <div class="panel maincolor">
+            <div id="panelcont">
+                <a class="subcolor" href="/">work</a>
+                <a class="subcolor" href="/about">about</a>
+                <a class="subcolor" href="mailto:vlui@usc.edu">/email</a>
+                <a class="subcolor" href="https://www.linkedin.com/in/valerie-lui/">/linkedin</a>
+            </div>
+        </div>
         
         <section class="about">
             <div class="col1">
@@ -55,10 +67,10 @@
             <div class="col2">
                 <h1 class="header subcolor">about me</h1>
                 <br>
-                <p class="subcolor">for as long as i’ve remembered, i’ve loved getting my hands dirty with painting, handicrafts, woodworking, graphic designing (just to name a few). most recently i picked up coding websites, which i see as a good mesh of my passion for designing and desire to push myself out of my comfort zone by learning new skills and experimenting with a new medium. while i’m by no means an expert, i have fun with it — and this website is the result of that. enjoy!
+                <p class="subcolor">for as long as i’ve remembered, i’ve loved getting my hands dirty with painting, handicrafts, woodworking, graphic designing (just to name a few). most recently i picked up coding websites, which i see as a good mesh of my passion for designing and desire to push myself out of my comfort zone by learning new skills and experimenting with a new medium -- and this website is the result of that. enjoy! : )
                     <br><br>
-                    <b>drink of choice:</b> iced oatmilk matcha or vanila latte<br>
-                    <b>favorite restaurant at the moment:</b> sun nong dan<br>
+                    <b>drink of choice:</b> iced oatmilk matcha or vanilla latte<br>
+                    <b>favorite food:</b> galbi tang from <a href="https://www.yelp.com/biz/sun-nong-dan-los-angeles-5" target="_blank">sun nong dan</a> !!!<br>
                     <b>favorite season:</b> summer<br>
                     <b>hobbies:</b> film photography, graphic design<br>
                     <b>currently learning more about:</b> AI, web3
@@ -80,7 +92,7 @@
                     // changing to light mode
                     // if in dark mode
                     if (elementColor == 'rgb(255, 255, 255)') {
-                        $('.maincolor').css('background-color','#dbd6d3');
+                        $('.maincolor').css('background-color','#f2f0ef');
                         $('.subcolor').css('color','#1a1918');
                         $('.midcolor').css('background-color', '#d1cbc7');
                         $('#nav3').css('color','#1a1918');
@@ -90,11 +102,12 @@
                         $('.sun').css('display','none');
                         $('.moon').css('display','block');
                         $('.project-desc').css('border-bottom-color', '#000000');
+                        $('.burgcolor').css('background-color','#1a1918');
                     } // if in light mode 
                     else if (elementColor != 'rgb(255, 255, 255)') {
                         $('.maincolor').css('background-color','#1a1918');
                         $('.subcolor').css('color','white');
-                        $('.midcolor').css('background-color', '#0d0d0c');
+                        $('.midcolor').css('background-color', '#000000');
                         $('#nav3').css('color','white');
                         $('a').css('color','white');
                         $('#abt1').css('border','1px dashed white');
@@ -102,7 +115,27 @@
                         $('.sun').css('display','block');
                         $('.moon').css('display','none');
                         $('.project-desc').css('border-bottom-color', '#ffffff');
+                        $('.burgcolor').css('background-color','#ffffff');
                     };
+                });
+
+                // open nav
+                $('.burger').on('click', function() {
+                    var displayEl = $('.panel').css('display');
+                    if (displayEl == 'none') {
+                        $('.panel').css('display','block');
+                        $('body').css('overflow','hidden');
+                        $('#o').css('display','none');
+                        $('#x').css('display','block');
+                    } // close nav
+                    else if (displayEl == 'block') {
+                        $('.panel').css('display','none');                        $('body').css('overflow','hidden');
+                        $('body').css('overflow','visible');
+                        $('#o').css('display','block');
+                        $('#x').css('display','none');
+
+                    };
+                    
                 });
         </script>
     </body>

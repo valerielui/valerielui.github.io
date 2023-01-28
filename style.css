@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6, p {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-image: url('https://images.unsplash.com/photo-1586074032362-2a21ee1ae5f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+    background-image: url('assets/receipt.jpg');
     background-size: cover;
     overflow: hidden;
 }
@@ -136,6 +136,19 @@ h1, h2, h3, h4, h5, h6, p {
     text-decoration: none;
     color: #000000;
 }
+#valerie h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    overflow-y: hidden!important;
+}
+#hyperlink {
+    text-decoration: none;
+    color: #000000;
+}
+#hyperlink:hover {
+    text-decoration: line-through;
+    font-weight: 700;
+}
 #nav {
     justify-content: space-around;
     width: 50%;
@@ -158,9 +171,6 @@ h1, h2, h3, h4, h5, h6, p {
     justify-content: space-around;
 }
 
-.col1 {
-/*    width: 10%;*/
-}
 .col1 p {
     font-size: 1.2rem;
 }
