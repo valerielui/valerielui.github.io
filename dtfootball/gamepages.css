@@ -54,6 +54,9 @@ body{
   margin: 0px;
   background-color: #f0f0f0;
 }
+main {
+  overflow-x: hidden!important;
+}
 .clearfloat{
   clear: both;
 }
@@ -100,6 +103,9 @@ ul{
   z-index: 100;
   cursor: pointer!important;
 }
+.block {
+  z-index: 100;
+}
 #navbar div{
   width: 30px;
   height: 3px;
@@ -139,13 +145,15 @@ ul{
   padding: 0px;
 }
 .mobile-menu{
-  height: calc(100vh - 55px);
+  height: calc(100vh - 56px);
   display: none;
   width: 100%;
   position: absolute;
   background-color: #f0f0f0;
-  bottom: 0;
-  z-index: 100;
+  top: 55px;
+  /* bottom: 0; */
+  z-index: 99;
+  overflow: hidden;
 }
 .mobile-menu li{
   margin-bottom: 10px;
@@ -258,6 +266,9 @@ i {
   #links{
       display: none;
   }
+  #header {
+    height: 56px!important;
+  }
   #header img{
       width: 150px;
       height: auto;
@@ -289,6 +300,15 @@ i {
   #body{
       padding: 0px;
       margin: 0px;
+  }
+  .smaller, .uscRed, .opponent {
+    font-size: 3.8rem!important;
+  }
+  .smallerV, .uscV {
+    font-size: 3.2rem!important;
+  }
+  .column h1 {
+    line-height: 10%!important;
   }
   #items {
       width: 100%;
@@ -695,6 +715,9 @@ i {
   #location {
     margin-top: 30px!important;
   }
+  .column p {
+    font-size: .8rem;
+  }
 
   .column_1 img {
     width: 40px!important;
@@ -735,14 +758,13 @@ i {
 }
 
 
-
 /* QUIZ PAGE */
 #quizHeader{
   color: #9A2133;
   font-style: italic;
   text-align: center;
   font-size: 3.2em;
-  font-weight: normal;
+  font-weight: 400;
   font-family: 'kepler-std';
 }
 #quizSection{
@@ -797,6 +819,7 @@ i {
   background-color: #F0F0F0;
   border: 1px solid black;
   margin: 15px 0px 15px 0px;
+
 }
 .questionBox:hover{
   background-color: lightgrey;
@@ -826,8 +849,9 @@ i {
   margin-left: 10px;
   font-size: 0.9rem;
   font-weight: 300;
-  margin-top: 3%;
+  /* margin-top: 3%; */
   display: inline-block;
+  line-height: 2.8em;
 }
 #quizSubmit{
   float: right;
