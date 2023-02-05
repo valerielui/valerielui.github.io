@@ -51,7 +51,6 @@ font-display:auto;font-style:italic;font-weight:900;font-stretch:normal;
     background-color: white;
     /* justify-content: space-evenly; */
     flex-direction: column;
-    height: 100vh;
 }
 
 #header_player{
@@ -237,6 +236,7 @@ font-display:auto;font-style:italic;font-weight:900;font-stretch:normal;
     grid-template-rows: auto auto;
     width: 100%;
     row-gap: 1em;
+    object-fit: cover;
     
 }
 
