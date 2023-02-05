@@ -652,6 +652,9 @@ i {
 }
 
 @media screen and (max-width: 600px) {
+  #stories {
+    margin-bottom: 0;
+  }
   .collage_column {
     flex: 90%;
     max-width: 90%;
