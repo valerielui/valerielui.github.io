@@ -18,6 +18,7 @@
         <script src="https://kit.fontawesome.com/7ed9debe52.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width" initial-scale="1.0">
         <link rel="stylesheet" type="text/css" href="nav.css">
+        <script src="modes.js"></script>
         <title>daily trojan | Valerie Lui</title>
         <meta name="keywords" content="Valerie Lui, Valerie, USC, Valerie Lui USC, USC Marshall, Marshall School of Business, Daily Trojan, online projects editor, online projects">
         <meta name="description" content="a digital receipt of my recent accomplishments :-)">
@@ -71,7 +72,7 @@
             
             <section class="width project-desc subcolor">
                 <div class="project-desc-col"><p class="subcolor"><b>role:</b><br>online projects editor</p></div><span>*</span>
-                <div class="project-desc-col"><p class="subcolor"><b>category:</b><br>project management</p></div><span>*</span>
+                <div class="project-desc-col"><p class="subcolor"><b>category:</b><br>project management, front-end development</p></div><span>*</span>
                 <div class="project-desc-col"><p class="subcolor"><b>tools used:</b><br>slack, notion, figma, html/css/jquery</p></div>
                 
             </section>
@@ -101,11 +102,20 @@
                 <div class="dt-row proj-body">
                     <div class="dt-row-box">
                         <div class="dt-row-img-box">
-                            <a href="https://dailytrojan.com/projects/fa22/dt-new-normal/index.html" target="_blank"><img src="assets/new-normal.png" alt="daily trojan the new normal website"></a>
+                            <a href="/dtfootball/" target="_blank"><img src="assets/dtfb-preview.jpg" alt="daily trojan fall 2022 football season supplement"></a>
                         </div>
-                        <figcaption>the new normal -- project on post-pandemic campus return</figcaption>
+                        <figcaption>hopes, heisman, and heartbreaks -- project covering USC's fall 2022 football season</figcaption>
                     </div>
 
+                    
+                    <div class="dt-row-box">
+                        <div class="dt-row-img-box">
+                            <a href="https://dailytrojan.com/projects/fa22/dt-new-normal/index.html" target="_blank"><img src="assets/new-normal.png" alt="daily trojan the new normal website"></a>
+                        </div>
+                        <figcaption>the new normal -- project documenting the USC community's return to campus post-pandemic</figcaption>
+                    </div></div>
+
+                <div class="dt-row">
                     <div class="dt-row-box">
                         <div class="dt-row-img-box">
                             <a href="https://dailytrojan.com/projects/fa22/after-dark/" target="_blank"><img src="assets/after-dark.png" alt="daily trojan usc after dark website"></a>
@@ -117,7 +127,7 @@
                         <div class="dt-row-img-box">
                             <a href="https://dailytrojan.com/projects/sp22/usg/" target="_blank"><img src="assets/usg.png" alt="daily trojan usg spring 2022 election guide website"></a>
                         </div>
-                        <figcaption>USG spring 2022 election guide</figcaption>
+                        <figcaption>USG spring 2022 election guide -- project introducing all platforms for the spring 2022 student government election</figcaption>
                     </div>
                 </div>
 
@@ -135,40 +145,41 @@
 </footer></div>
         
         <script>
-            $(document).ready(function() {
-                // dark mode light mode
-                $('.mode').on('click', function() {
-                    var elementColor = $('.subcolor').css('color');
-                    // changing to light mode
-                    // if in dark mode
-                    if (elementColor == 'rgb(255, 255, 255)') {
-                        $('.maincolor').css('background-color','#dbd6d3');
-                        $('.subcolor').css('color','#1a1918');
-                        $('.midcolor').css('background-color', '#c6beb9');
-                        $('#nav3').css('color','#1a1918');
-                        $('a').css('color','#1a1918');
-                        $('#abt1').css('border','1px dashed #1a1918');
-                        $('.mode').css('color','#1a1918');
-                        $('.sun').css('display','none');
-                        $('.moon').css('display','block');
-                        $('.project-desc').css('border-bottom-color', '#000000');
-                        // $('.hero').css('background-color','#fefdfb');
-                    } // if in light mode 
-                    else if (elementColor != 'rgb(255, 255, 255)') {
-                        $('.maincolor').css('background-color','#1a1918');
-                        $('.subcolor').css('color','white');
-                        $('.midcolor').css('background-color', '#0d0d0c');
-                        $('#nav3').css('color','white');
-                        $('a').css('color','white');
-                        $('#abt1').css('border','1px dashed white');
-                        $('.mode').css('color','white');
-                        $('.sun').css('display','block');
-                        $('.moon').css('display','none');
-                        $('.project-desc').css('border-bottom-color', '#ffffff');
-                        // $('.hero').css('background-color','#473C38');
-                    };
-                });
-            });
+            // $(document).ready(function() {
+            //     // dark mode light mode
+            //     $('.mode').on('click', function() {
+            //         var elementColor = $('.subcolor').css('color');
+            //         // changing to light mode
+            //         // if in dark mode
+            //         if (elementColor == 'rgb(255, 255, 255)') {
+            //             $('.maincolor').css('background-color','#dbd6d3');
+            //             $('.subcolor').css('color','#1a1918');
+            //             $('.midcolor').css('background-color', '#c6beb9');
+            //             $('#nav3').css('color','#1a1918');
+            //             $('a').css('color','#1a1918');
+            //             $('#abt1').css('border','1px dashed #1a1918');
+            //             $('.mode').css('color','#1a1918');
+            //             $('.sun').css('display','none');
+            //             $('.moon').css('display','block');
+            //             $('.project-desc').css('border-bottom-color', '#000000');
+            //             // $('.hero').css('background-color','#fefdfb');
+            //         } // if in light mode 
+            //         else if (elementColor != 'rgb(255, 255, 255)') {
+            //             $('.maincolor').css('background-color','#1a1918');
+            //             $('.subcolor').css('color','white');
+            //             $('.midcolor').css('background-color', '#0d0d0c');
+            //             $('#nav3').css('color','white');
+            //             $('a').css('color','white');
+            //             $('#abt1').css('border','1px dashed white');
+            //             $('.mode').css('color','white');
+            //             $('.sun').css('display','block');
+            //             $('.moon').css('display','none');
+            //             $('.project-desc').css('border-bottom-color', '#ffffff');
+            //             $('.panel').css('background-color','#1a1918');
+
+            //         };
+            //     });
+            // });
 
             // open nav
             $('.burger').on('click', function() {

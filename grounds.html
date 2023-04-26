@@ -18,6 +18,7 @@
         <script src="https://kit.fontawesome.com/7ed9debe52.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width" initial-scale="1.0">
         <link rel="stylesheet" type="text/css" href="nav.css">
+        <script src="modes.js"></script>
         <title>grounds | Valerie Lui</title>
         <meta name="keywords" content="Valerie Lui, Valerie, USC, Valerie Lui USC, USC Marshall, Marshall School of Business, Daily Trojan, online projects editor, online projects">
         <meta name="description" content="a digital receipt of my recent accomplishments :-)">
@@ -83,7 +84,7 @@
                 <p class="proj-body subcolor">Grounds is a D2C e-commerce company that offers of a curated selection of coffees that are packaged in coffee bags — think tea bags but with coffee grounds — and delivered straight to consumers’ doorstep through a monthly subscription. It is targeted towards college students who prioritize convenience and quality coffee. Grounds’ coffee is branded intuitively as blends are labelled from numbers of 1-5 and described to consumers solely based on factors such as their flavor profile and strength, to appeal to consumers who are not well-versed with the coffee terminology.</p>
                 
                 <h2 class="proj-header kepler subcolor">what I did</h2>
-                <p class="proj-body subcolor">As the lead designer at Grounds, I created a brand identity for the company, which involved selecting typefaces and colors to represent our brand, as well as designing our logo. I also  spearheaded the design of our application prototype, pitch deck, and e-commerce website.</p>
+                <p class="proj-body subcolor">As the lead designer at Grounds, I created a brand identity for the company and spearheaded the design of our application prototype, pitch deck, and e-commerce website.</p>
                 
                 <h2 class="proj-header kepler subcolor">final deliverable</h2>
                 <p class="subcolor">Play with our final prototype here!</p>
@@ -99,40 +100,40 @@
 </footer></div>
         
         <script>
-            $(document).ready(function() {
-                // dark mode light mode
-                $('.mode').on('click', function() {
-                    var elementColor = $('.subcolor').css('color');
-                    // changing to light mode
-                    // if in dark mode
-                    if (elementColor == 'rgb(255, 255, 255)') {
-                        $('.maincolor').css('background-color','#dbd6d3');
-                        $('.subcolor').css('color','#1a1918');
-                        $('.midcolor').css('background-color', '#c6beb9');
-                        $('#nav3').css('color','#1a1918');
-                        $('a').css('color','#1a1918');
-                        $('#abt1').css('border','1px dashed #1a1918');
-                        $('.mode').css('color','#1a1918');
-                        $('.sun').css('display','none');
-                        $('.moon').css('display','block');
-                        $('.project-desc').css('border-bottom-color', '#000000');
-                        // $('.hero').css('background-color','#fefdfb');
-                    } // if in light mode 
-                    else if (elementColor != 'rgb(255, 255, 255)') {
-                        $('.maincolor').css('background-color','#1a1918');
-                        $('.subcolor').css('color','white');
-                        $('.midcolor').css('background-color', '#0d0d0c');
-                        $('#nav3').css('color','white');
-                        $('a').css('color','white');
-                        $('#abt1').css('border','1px dashed white');
-                        $('.mode').css('color','white');
-                        $('.sun').css('display','block');
-                        $('.moon').css('display','none');
-                        $('.project-desc').css('border-bottom-color', '#ffffff');
-                        // $('.hero').css('background-color','#473C38');
-                    };
-                });
-            });
+            // $(document).ready(function() {
+            //     // dark mode light mode
+            //     $('.mode').on('click', function() {
+            //         var elementColor = $('.subcolor').css('color');
+            //         // changing to light mode
+            //         // if in dark mode
+            //         if (elementColor == 'rgb(255, 255, 255)') {
+            //             $('.maincolor').css('background-color','#dbd6d3');
+            //             $('.subcolor').css('color','#1a1918');
+            //             $('.midcolor').css('background-color', '#c6beb9');
+            //             $('#nav3').css('color','#1a1918');
+            //             $('a').css('color','#1a1918');
+            //             $('#abt1').css('border','1px dashed #1a1918');
+            //             $('.mode').css('color','#1a1918');
+            //             $('.sun').css('display','none');
+            //             $('.moon').css('display','block');
+            //             $('.project-desc').css('border-bottom-color', '#000000');
+            //             // $('.hero').css('background-color','#fefdfb');
+            //         } // if in light mode 
+            //         else if (elementColor != 'rgb(255, 255, 255)') {
+            //             $('.maincolor').css('background-color','#1a1918');
+            //             $('.subcolor').css('color','white');
+            //             $('.midcolor').css('background-color', '#0d0d0c');
+            //             $('#nav3').css('color','white');
+            //             $('a').css('color','white');
+            //             $('#abt1').css('border','1px dashed white');
+            //             $('.mode').css('color','white');
+            //             $('.sun').css('display','block');
+            //             $('.moon').css('display','none');
+            //             $('.project-desc').css('border-bottom-color', '#ffffff');
+            //             // $('.hero').css('background-color','#473C38');
+            //         };
+            //     });
+            // });
 
             // open nav
             $('.burger').on('click', function() {

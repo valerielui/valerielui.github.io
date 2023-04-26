@@ -18,6 +18,7 @@
         <script src="https://kit.fontawesome.com/7ed9debe52.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width" initial-scale="1.0">
         <link rel="stylesheet" type="text/css" href="nav.css">
+        <script src="modes.js"></script>
         <title>upright | Valerie Lui</title>
         <meta name="keywords" content="Valerie Lui, Valerie, USC, Valerie Lui USC, USC Marshall, Marshall School of Business, Daily Trojan, online projects editor, online projects, upright oats, upright">
         <meta name="description" content="a digital receipt of my recent accomplishments :-)">
@@ -88,8 +89,8 @@
                         <div class="grid-item"><a href="https://www.instagram.com/p/Cbx5VbbhHjN/?utm_source=ig_web_copy_link" target="_blank" ><img src="assets/upright/uprightle.jpg"></a><figcaption>inspired by wordle back when it was popular</figcaption></div>
                    </span>
                    <span>
-                       <div class="grid-item"><a href="https://www.instagram.com/p/CZKmm0Ztu1K/?utm_source=ig_web_copy_link" target="_blank" ><img src="assets/upright/venn.jpg"></a><figcaption>venn diagram showing competitive advantages</figcaption></div>
-                       <div class="grid-item"><a href="#" ><img src="assets/upright/usvsthem.jpg"></a><figcaption>upright vs milk</figcaption></div>
+                       <div class="grid-item"><a href="https://www.instagram.com/p/CZsE7vLtqFL/?utm_source=ig_web_copy_link" target="_blank" ><img src="assets/upright/venn.jpg"></a><figcaption>venn diagram showing competitive advantages</figcaption></div>
+                       <div class="grid-item"><a href="https://www.instagram.com/p/CZKmm0Ztu1K/?utm_source=ig_web_copy_link" target="_blank"><img src="assets/upright/usvsthem.jpg"></a><figcaption>upright vs milk</figcaption></div>
                    </span>
                 </div>
                 
@@ -113,40 +114,40 @@
 </footer></div>
         
         <script>
-            $(document).ready(function() {
-                // dark mode light mode
-                $('.mode').on('click', function() {
-                    var elementColor = $('.subcolor').css('color');
-                    // changing to light mode
-                    // if in dark mode
-                    if (elementColor == 'rgb(255, 255, 255)') {
-                        $('.maincolor').css('background-color','#dbd6d3');
-                        $('.subcolor').css('color','#1a1918');
-                        $('.midcolor').css('background-color', '#c6beb9');
-                        $('#nav3').css('color','#1a1918');
-                        $('a').css('color','#1a1918');
-                        $('#abt1').css('border','1px dashed #1a1918');
-                        $('.mode').css('color','#1a1918');
-                        $('.sun').css('display','none');
-                        $('.moon').css('display','block');
-                        $('.project-desc').css('border-bottom-color', '#000000');
-                        // $('.hero').css('background-color','#fefdfb');
-                    } // if in light mode 
-                    else if (elementColor != 'rgb(255, 255, 255)') {
-                        $('.maincolor').css('background-color','#1a1918');
-                        $('.subcolor').css('color','white');
-                        $('.midcolor').css('background-color', '#0d0d0c');
-                        $('#nav3').css('color','white');
-                        $('a').css('color','white');
-                        $('#abt1').css('border','1px dashed white');
-                        $('.mode').css('color','white');
-                        $('.sun').css('display','block');
-                        $('.moon').css('display','none');
-                        $('.project-desc').css('border-bottom-color', '#ffffff');
-                        // $('.hero').css('background-color','#473C38');
-                    };
-                });
-            });
+            // $(document).ready(function() {
+            //     // dark mode light mode
+            //     $('.mode').on('click', function() {
+            //         var elementColor = $('.subcolor').css('color');
+            //         // changing to light mode
+            //         // if in dark mode
+            //         if (elementColor == 'rgb(255, 255, 255)') {
+            //             $('.maincolor').css('background-color','#dbd6d3');
+            //             $('.subcolor').css('color','#1a1918');
+            //             $('.midcolor').css('background-color', '#c6beb9');
+            //             $('#nav3').css('color','#1a1918');
+            //             $('a').css('color','#1a1918');
+            //             $('#abt1').css('border','1px dashed #1a1918');
+            //             $('.mode').css('color','#1a1918');
+            //             $('.sun').css('display','none');
+            //             $('.moon').css('display','block');
+            //             $('.project-desc').css('border-bottom-color', '#000000');
+            //             // $('.hero').css('background-color','#fefdfb');
+            //         } // if in light mode 
+            //         else if (elementColor != 'rgb(255, 255, 255)') {
+            //             $('.maincolor').css('background-color','#1a1918');
+            //             $('.subcolor').css('color','white');
+            //             $('.midcolor').css('background-color', '#0d0d0c');
+            //             $('#nav3').css('color','white');
+            //             $('a').css('color','white');
+            //             $('#abt1').css('border','1px dashed white');
+            //             $('.mode').css('color','white');
+            //             $('.sun').css('display','block');
+            //             $('.moon').css('display','none');
+            //             $('.project-desc').css('border-bottom-color', '#ffffff');
+            //             // $('.hero').css('background-color','#473C38');
+            //         };
+            //     });
+            // });
 
             // open nav
             $('.burger').on('click', function() {
