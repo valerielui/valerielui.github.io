@@ -290,6 +290,35 @@ figcaption {
     object-fit: cover;
 }
 
+/* generate */
+.generate {
+    position: relative;
+}
+.generate #generate-box {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.generate #gen-btn {
+    width: 80px;
+    clear:right;
+    border: 2px solid #aca297;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    padding: 15px!important;
+}
+.generate #gen-btn:hover, .generate #gen-btn:active {
+    background-color: #aca297;
+}
+.generate a {
+    width: 80px;
+    text-decoration: none;
+    cursor: pointer!important;
+}
+
 
 
 @media only screen and (max-width: 600px) {
