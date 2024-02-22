@@ -389,6 +389,12 @@ h1, h2, h3, h4, h5, h6, p {
     #box {
         width:60%!important;
     }
+    /* .about .col1 {
+        width: 45%!important;
+    }
+    .about .col2 {
+        width: 55%!important;
+    } */
 }
 @media only screen and (max-width: 600px) {
     .home {
@@ -397,11 +403,20 @@ h1, h2, h3, h4, h5, h6, p {
     .home p {
         font-size: 1rem;
     }
+    #header h1 {
+        font-size: 2.3rem;
+    }
+    #header p, #homefoot p {
+        line-height: 1.1rem!important;
+    }
+    #header {
+        margin-bottom: 0.8rem!important;
+    }
     #box {
-        width:90%!important;
+        width:88%!important;
     }
     .cont {
-        width: 95%;
+        width: 90%;
     }
     .mobilenav {
         height: 100vh;
@@ -414,11 +429,16 @@ h1, h2, h3, h4, h5, h6, p {
         left: 0;
         padding: 20% 0 0 10%;
     }
+    #des {
+        font-size: 2.3rem!important;
+    }
     .cnav {
         padding: 3% 0 5% 0;
     }
     #nav3 {
-        width: 50%;
+        width: 60%!important;
+        margin: 0 20%!important;
+        justify-content: space-between!important;
     }
     .mobilenav li a {
         font-size: 4rem;
@@ -459,6 +479,9 @@ h1, h2, h3, h4, h5, h6, p {
     }
     #footerdivider {
         margin-top: 5%
+    }
+    #homefoot {
+        margin-top: 0.8rem!important;
     }
     .footer {
         height: 20vh;

@@ -27,6 +27,7 @@ nav {
 /*    opacity: 0.75;*/
     position: fixed;
     z-index: 1;
+    top: 0;
 }
 .navcont2 {
     display: flex;
@@ -67,8 +68,9 @@ nav div {
 .about {
     display: flex;
     width: 80%;
-    margin: 0 10%;
-    padding: 15vh 0 0 0;
+    height: 75%;
+    margin: 15vh 10% 0;
+    /* padding: 12vh 0 0 0; */
     align-items: center;
 }
 .about .col1 {
@@ -319,7 +321,14 @@ figcaption {
     cursor: pointer!important;
 }
 
-
+/* @media only screen and (min-width: 768px) and (max-width: 1000px){
+    .about .col1 {
+        width: 40%!important;
+    }
+    .about .col2 {
+        width: 55%!important;
+    }
+} */
 
 @media only screen and (max-width: 600px) {
     body {
@@ -419,6 +428,21 @@ figcaption {
     .hero {
         overflow: hidden;
     }
+    #logify-project-desc {
+        flex-direction: column!important;
+    }
+    /* .about {
+        height: 100vh!important;
+        width: 90%;
+        margin: 0 5%;
+        padding: 3.5rem 0;
+    }
+    .footer {
+        position: relative!important;
+        bottom: 0!important;
+        margin-top: 10rem;
+        width: 100vw!important;
+    } */
 }
 
 
