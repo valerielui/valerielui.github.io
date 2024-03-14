@@ -54,8 +54,8 @@
                 <div class="divider"><span class="dividersp"></span></div>
                 
                 <div id="nav3">
-                    <a href="/test/about">about</a>
-                    <a href="/">work</a>
+                    <a href="about.html">about</a>
+                    <a href="test.html">work</a>
                 </div>
                 
                 <div class="divider"><span class="dividersp"></span></div>
@@ -160,6 +160,19 @@
                 $(window).resize(function() {
                     responsive(); 
                 });
+
+                function navigatingFromWhere() {
+                    var referrerLink = document.referrer;
+                    console.log(document.referrer);
+                    
+                    // determine if user came from website
+                    if (referrerLink.match(/^https?:\/\/([^\/]+\.)?valerielui\.com(\/|$)/i)) {
+                        alert("u were alr on the website");
+                        $('#box').css('animation-duration','0s');
+                    }
+                }
+
+                navigatingFromWhere();
                 
                 // dark mode light mode
                 $('.mode').on('click', function() {
@@ -178,17 +191,6 @@
                         $('.moon').css('display','none');
                         $('#overlay').css('background-color', '#aca297')
                     };
-                });
-
-                // find words in url
-                // $(document).ready(function() {
-                //     if (window.location.href.indexOf("valerielui") > -1) {
-                //     alert("your url contains the name franky");
-                //     }
-                // });
-
-                $(document).ready(function() {
-                    alert(document.referrer);
                 });
             });
         </script>

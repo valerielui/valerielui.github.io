@@ -123,16 +123,16 @@ body {
     line-height: 2.5rem;
     letter-spacing: 0;
 }
-#abtpg .footer {
+/* #abtpg .footer {
     position: absolute;
     bottom: 0;
-}
+} */
 .footer {
     /* margin-top: 10vh; */
     height: 20vh;
     background-color: #000000;
     width: 100%;
-    position: relative;
+    position: absolute;
     bottom: 0;
 /*    opacity: 0.75;*/
 }
@@ -388,6 +388,7 @@ figcaption {
     }
     .footer {
         position: relative;
+        margin-top: 10vh;
     }
     .project-desc {
         flex-direction: column;
