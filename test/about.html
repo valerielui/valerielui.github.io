@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PPWW083PS"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-3PPWW083PS');
+        </script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <link rel="icon" href="assets/favicon.png">
+        <link rel="stylesheet" href="https://use.typekit.net/pyi3esy.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7ed9debe52.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <title>about | Valerie Lui</title>
+        <meta name="keywords" content="Valerie Lui, Valerie, USC, Valerie Lui USC, USC Marshall, Marshall School of Business, Daily Trojan, online projects editor, online projects">
+        <meta name="description" content="a digital receipt of my recent accomplishments :-)">
+        <meta name="theme-color" content="#1a1918">
+        <meta property="og:site_name" content="Valerie Lui">
+        <meta property="og:title" content="Valerie Lui">
+        <meta property="og:description" content="a digital receipt of my recent accomplishments :-)">
+        <meta property="og:type" content="website">
+       <meta property="og:image" content="assets/preview.jpg">
+<!--        <meta property="og:url" content="https://valerielui.com/ox-stickers">-->
+        <link rel="stylesheet" type="text/css" href="newnav.css">
+    </head>
+    
+    <body id="abtpg" class="maincolor">
+    <!-- <body class="proj-cont maincolor about" style="height: 100vh!important;"> -->
+
+        <nav class="midcolor">
+            <div class="navcont">
+                <div class="navcont2">
+                    <div class="navleft">
+                        <p class="subcolor"><a href="/test">work</a></p>
+                        <p class="subcolor">/</p>
+                        <p class="subcolor"><a href="/about">about</a></p>
+                        <i class="fa-solid fa-bars burger subcolor" id="o"></i>
+                        <i class="fa-solid fa-x burger subcolor" id="x"></i>
+                    </div>
+                    <p id="val" class="kepler subcolor"><a href="/">valerie lui</a></p>
+                    <div class="navright">
+                        <i class="fa-solid fa-sun sun mode"></i>
+                        <i class="fa-solid fa-moon moon mode"></i>
+                    </div>
+                </div>
+                
+            </div>
+        </nav>
+
+        <div class="panel maincolor">
+            <div id="panelcont">
+                <a class="subcolor" href="/">work</a>
+                <a class="subcolor" href="/about">about</a>
+                <a class="subcolor" href="mailto:hello@valerielui.com">/email</a>
+                <a class="subcolor" href="https://www.linkedin.com/in/valerie-lui/">/linkedin</a>
+            </div>
+        </div>
+        <div class="proj-cont">
+        <div class="about">
+            <div class="col1">
+                <img src="assets/me2.jpg" alt="a picture of me">
+            </div>
+            <div class="col2">
+                <h1 class="header subcolor">about me</h1>
+                <br>
+                <p class="subcolor">for as long as i’ve remembered, i’ve loved getting my hands dirty with painting, handicrafts, woodworking, graphic designing (just to name a few). most recently i picked up coding websites, which i see as a good mesh of my passion for designing and desire to push myself out of my comfort zone by learning new skills and experimenting with a new medium -- and this website is the result of that. enjoy! : )
+                    <br><br>
+                    <b>currently based in:</b>  los angeles<br>
+                    <b>drink of choice:</b> iced americano or hojicha latte<br>
+                    <b>favorite food:</b> beef brisket sullongtang from <a href="https://www.yelp.com/biz/han-bat-sul-lung-tang-los-angeles-2" target="_blank">hanbat</a> !!!<br>
+                    <b>favorite season:</b> summer<br>
+                    <b>hobbies:</b> film photography, cooking, making my own coffee/ matcha lattes
+                    </p>
+            </div>
+
+            
+        </div>
+    
+        <footer class="footer midcolor">
+            <!-- <footer class="footer midcolor" style="position: relative; margin-bottom: -100px!important;"> -->
+                <div class="footercont">
+                    <p class="subcolor"><span class="kepler">let's connect!</span><br>
+                    <a href="mailto:hello@valerielui.com">email</a> / <a href="https://www.linkedin.com/in/valerie-lui/">linkedin</a></p>
+                </div>
+            </footer>
+    </div>
+        
+        
+        
+        <script>
+            // dark mode light mode
+                $('.mode').on('click', function() {
+                    var elementColor = $('.subcolor').css('color');
+                    // changing to light mode
+                    // if in dark mode
+                    if (elementColor == 'rgb(255, 255, 255)') {
+                        $('.maincolor').css('background-color','#f2f0ef');
+                        $('.subcolor').css('color','#1a1918');
+                        $('.midcolor').css('background-color', '#d1cbc7');
+                        $('#nav3').css('color','#1a1918');
+                        $('a').css('color','#1a1918');
+                        $('#abt1').css('border','1px dashed #1a1918');
+                        $('.mode').css('color','#1a1918');
+                        $('.sun').css('display','none');
+                        $('.moon').css('display','block');
+                        $('.project-desc').css('border-bottom-color', '#000000');
+                        $('.burgcolor').css('background-color','#1a1918');
+                    } // if in light mode 
+                    else if (elementColor != 'rgb(255, 255, 255)') {
+                        $('.maincolor').css('background-color','#1a1918');
+                        $('.subcolor').css('color','white');
+                        $('.midcolor').css('background-color', '#000000');
+                        $('#nav3').css('color','white');
+                        $('a').css('color','white');
+                        $('#abt1').css('border','1px dashed white');
+                        $('.mode').css('color','white');
+                        $('.sun').css('display','block');
+                        $('.moon').css('display','none');
+                        $('.project-desc').css('border-bottom-color', '#ffffff');
+                        $('.burgcolor').css('background-color','#ffffff');
+                    };
+                });
+
+                // open nav
+                $('.burger').on('click', function() {
+                    var displayEl = $('.panel').css('display');
+                    if (displayEl == 'none') {
+                        $('.panel').css('display','block');
+                        $('body').css('overflow','hidden');
+                        $('#o').css('display','none');
+                        $('#x').css('display','block');
+                    } // close nav
+                    else if (displayEl == 'block') {
+                        $('.panel').css('display','none');                        $('body').css('overflow','hidden');
+                        $('body').css('overflow','visible');
+                        $('#o').css('display','block');
+                        $('#x').css('display','none');
+
+                    };
+                    
+                });
+        </script>
+    </body>
+</html>
