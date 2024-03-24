@@ -158,23 +158,33 @@
                 responsive();
                 
                 
-                $(window).resize(function() {
-                    responsive(); 
-                });
+                
 
                 function pauseAni() {
-                    var referrerLink = document.referrer;
-                    console.log(document.referrer);
-                    
+                    var referrerLink = document.referrer;                    
                     // determine if user came from website
                     // if yes pause animation
                     if (referrerLink.match(/^https?:\/\/([^\/]+\.)?valerielui\.com(\/|$)/i)) {
-                        //alert("u were alr on the website");
                         $('#box').css('animation-duration','0s');
-                    }
-                }
+                    };
+                };
 
                 pauseAni();
+
+                function disableAniOnMobile() {
+                    var windowWidth = $(window).width();
+                    if (windowWidth < '1000px') {
+                        $('#box').css('animation','none!important');
+                        $('.cont').css('animation','none!important');
+                    };
+                };
+
+                disableAniOnMobile();
+
+                $(window).resize(function() {
+                    responsive(); 
+                    disableAniOnMobile();
+                });
                 
                 // dark mode light mode
                 $('.mode').on('click', function() {

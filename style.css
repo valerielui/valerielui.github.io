@@ -484,9 +484,11 @@ h1, h2, h3, h4, h5, h6, p {
         bottom: 0!important;
         transform: translate(-50%,0);
         position: absolute;
+        animation: none!important;
     }
     .cont {
         width: 90%!important;
+        animation: none!important;
     }
     /* .about .col1 {
         width: 45%!important;
@@ -522,6 +524,9 @@ h1, h2, h3, h4, h5, h6, p {
         bottom: 0!important;
         transform: translate(-50%,0);
         position: absolute;
+    }
+    #box, .cont {
+        animation: none!important; 
     }
     .projects {
         overflow-y: scroll;
