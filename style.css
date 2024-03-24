@@ -42,7 +42,7 @@ body {
     overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6, p, a, ul, li {
-    font-family: 'Inconsolata', monospace;
+    font-family: 'inconsolata', monospace;
 }
 h4,p {
     font-size: 1rem;
@@ -84,10 +84,16 @@ h1 {
 h1, h2, h3, h4, h5, h6, p {
     font-family: 'Inconsolata', monospace;
 }
-/* @keyframes onLoad {
+
+@-webkit-keyframes onLoad {
     from {top: 100%;}
     to {top: 10%;}
-} */
+}
+
+@keyframes onLoad {
+    from {top: 100%;}
+    to {top: 10%;}
+}
 
 #box {
     width: 40%!important;
@@ -99,16 +105,26 @@ h1, h2, h3, h4, h5, h6, p {
     background-image: url('assets/receipt.jpg');
     background-size: cover;
     overflow: hidden;
-    /* animation-name: onLoad;
+    -webkit-animation-name: onLoad;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: ease-in;
+    animation-name: onLoad;
     animation-duration: 5s;
-    animation-timing-function: ease-in; */
+    animation-timing-function: ease-in;
     -webkit-mask-box-image: url('assets/edge.svg');
     mask-border: url('assets/edge.svg');
 }
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 @keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
+
 .cont {
     width: 80%;
     height: 90%;
@@ -117,8 +133,9 @@ h1, h2, h3, h4, h5, h6, p {
     left: 50%;
     transform: translate(-50%,-47%);
     z-index: 100;
+    -webkit-animation: fadeIn 7s;
     animation: fadeIn 7s;
-    overflow-y: hidden;
+
 }
 #overlay {
     background-color: #aca297;
