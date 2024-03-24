@@ -15,6 +15,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/7ed9debe52.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width" initial-scale="1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -38,7 +41,7 @@
             <div class="cont">
                 <div id="header">
                     <a href="/" id="valerie"><h1 >valerie lui</h1></a>
-                    <p style="font-size:1rem;">impact-driven interdisciplinary creative</p>
+                    <p style="margin-top: 5px;">impact-driven interdisciplinary creative</p>
 <!--                    <br>-->
 <!--                    <div id="nav"><a href="#"><p>- about -</p></a><a href="#"><p>- work -</p></a></div>-->
                 </div>
@@ -68,47 +71,56 @@
                 
                 <div class="projects">
                     <div class="category">
-                        <div class="col1"><p>01</p></div>
                         <div class="col2">
-                            <a class="cathead" id="des" href="/logify">the logify project</a>
+                            <a id="proj-title" href="/logify"><span id="proj-comma">the logify project</span>; ui/ux design</a>
                             </div>
+                        <div class="col1"><p id="num">01</p></div>
+
                             
                             
                     </div>
                     
                     <div class="category">
-                        <div class="col1"><p>02</p></div>
                         <div class="col2">
-                            <a class="cathead" id="des" href="/dt">daily trojan</a>
+                            <a id="proj-title" href="/pawsh"><span id="proj-comma">pawsh</span>; growth strategy</a>
                             </div>
+                        <div class="col1"><p id="num">02</p></div>
                     </div>
                     
                     <div class="category">
-                        <div class="col1"><p>03</p></div>
                         <div class="col2">
-                            <a class="cathead" id="des" href="/grounds">grounds</a>
+                            <a id="proj-title" href="/dt"><span id="proj-comma">daily trojan</span>; product mgmt, web design, front-end dev</a>
                             </div>
+                        <div class="col1"><p id="num">03</p></div>
+                    </div>
+                    
+                    <div class="category">
+                        <div class="col2">
+                            <a id="proj-title" href="/grounds"><span id="proj-comma">grounds</span>; ui/ux design, brand strategy</a>
+                            </div>
+                        <div class="col1"><p id="num">04</p></div>
                     </div>
 
                     <div class="category">
-                        <div class="col1"><p>04</p></div>
                         <div class="col2">
-                            <a class="cathead" id="des" href="/dfg">develop for good</a>
+                            <a id="proj-title" href="/dfg"><span id="proj-comma">develop for good</span>; ui/ux design</a>
                             </div>
+                            <div class="col1"><p id="num">05</p></div>
                     </div>
                     
                     <div class="category">
-                        <div class="col1"><p>05</p></div>
                         <div class="col2">
-                            <a class="cathead" id="des" href="/upright">upright oats</a>
+                            <a id="proj-title" href="/upright"><span id="proj-comma">upright</span>; marketing, graphic & web design</a>
                             </div>
-                    </div>
+                        <div class="col1"><p id="num">06</p></div>
+                    </div></div>
+
                     
 <!--
                     <div class="category">
-                        <div class="col1"><p>05</p></div>
+                        <div class="col1"><p id="num">05</p></div>
                         <div class="col2">
-                            <a class="cathead" id="des" href="#">data, ML, AI</a>
+                            <a id="proj-title" href="#">data, ML, AI</a>
                             </div>
                     </div>
 -->
@@ -116,16 +128,16 @@
                 <div class="divider"><span class="dividersp"></span></div>
                 
                 <footer id="homefoot" >
-                    <p style="font-size:1rem;">thanks for visiting <a href="https://www.valerielui.com">valerielui.com</a> :-)<br>
+                    <p>thanks for visiting <a href="https://www.valerielui.com">valerielui.com</a> :-)<br>
                     have a great day!</p>
-                    <br><p style="font-size:1rem;">connect with me!
+                    <br><p>connect with me!
                     <br><a href="https://www.linkedin.com/in/valerie-lui/">linkedin</a> & <a href="mailto:hello@valerielui.com">email</a>!</p>
                     <br>
                     <i class="fa-solid fa-moon moon mode" style="overflow: hidden;"></i>
                     <i class="fa-solid fa-sun sun mode" style="overflow: hidden;"></i>                    
                 </footer>
 
-            </div>
+            
             
         </div></div>
         
@@ -149,6 +161,20 @@
                 $(window).resize(function() {
                     responsive(); 
                 });
+
+                function pauseAni() {
+                    var referrerLink = document.referrer;
+                    console.log(document.referrer);
+                    
+                    // determine if user came from website
+                    // if yes pause animation
+                    if (referrerLink.match(/^https?:\/\/([^\/]+\.)?valerielui\.com(\/|$)/i)) {
+                        //alert("u were alr on the website");
+                        $('#box').css('animation-duration','0s');
+                    }
+                }
+
+                pauseAni();
                 
                 // dark mode light mode
                 $('.mode').on('click', function() {
