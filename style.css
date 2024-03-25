@@ -112,9 +112,10 @@ h1, h2, h3, h4, h5, h6, p {
     animation-name: onLoad;
     animation-duration: 5s;
     animation-timing-function: ease-in;
+    /* -webkit-mask-image: url('assets/edge.png');
+    mask-image: url('assets/edge.png'); */
+    /* -webkit-mask-border: url('assets/edge.png'); */
     -webkit-mask-box-image: url('assets/edge.png');
-    -webkit-mask-border: url('assets/edge.png');
-    mask-border: url('assets/edge.png');
 }
 
 @-webkit-keyframes fadeIn {
