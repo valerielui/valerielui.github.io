@@ -538,9 +538,9 @@ h1, h2, h3, h4, h5, h6, p {
     .cont {
         width: 90%;
         height: auto;
-        top: 48%;
+        top: 50%;
         left: 50%;
-        transform: translate(-50%, -52%);
+        transform: translate(-50%, -50%);
         overflow-y: hidden;
     }
     #homefoot {
