@@ -112,8 +112,8 @@ h1, h2, h3, h4, h5, h6, p {
     animation-name: onLoad;
     animation-duration: 5s;
     animation-timing-function: ease-in;
-    /* -webkit-mask-box-image: url('assets/edge.svg');
-    mask-border: url('assets/edge.svg'); */
+    -webkit-mask-box-image: url('assets/edge.png');
+    mask-border: url('assets/edge.png');
 }
 
 @-webkit-keyframes fadeIn {
@@ -484,11 +484,9 @@ h1, h2, h3, h4, h5, h6, p {
         bottom: 0!important;
         transform: translate(-50%,0);
         position: absolute;
-        animation: none!important;
     }
     .cont {
         width: 90%!important;
-        animation: none!important;
     }
     /* .about .col1 {
         width: 45%!important;
@@ -524,13 +522,12 @@ h1, h2, h3, h4, h5, h6, p {
         bottom: 0!important;
         transform: translate(-50%,0);
         position: absolute;
-    }
-    #box, .cont {
-        animation: none!important; 
+
     }
     .projects {
-        overflow-y: scroll;
-        height: auto!important;
+        overflow-y: scroll!important;
+        height: 28vh!important;
+        /* background-color: blue; */
     }
     .category, .col2 {
         height: auto!important;
@@ -539,6 +536,11 @@ h1, h2, h3, h4, h5, h6, p {
     }
     .cont {
         width: 90%;
+        height: auto;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -52%);
+        overflow-y: hidden;
     }
     #homefoot {
         width: 90%;
