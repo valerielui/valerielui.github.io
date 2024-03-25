@@ -113,6 +113,7 @@ h1, h2, h3, h4, h5, h6, p {
     animation-duration: 5s;
     animation-timing-function: ease-in;
     -webkit-mask-box-image: url('assets/edge.png');
+    -webkit-mask-border: url('assets/edge.png');
     mask-border: url('assets/edge.png');
 }
 
@@ -527,7 +528,6 @@ h1, h2, h3, h4, h5, h6, p {
     .projects {
         overflow-y: scroll!important;
         height: 28vh!important;
-        /* background-color: blue; */
     }
     .category, .col2 {
         height: auto!important;
