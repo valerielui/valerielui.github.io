@@ -61,6 +61,7 @@ nav div {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    letter-spacing: 0!important;
 }
 #val a {
     text-decoration: none;
