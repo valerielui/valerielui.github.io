@@ -70,17 +70,7 @@ h1 {
     text-align: center;
     margin-bottom: 1rem;
 }
-#header h1 {
-/*    text-transform: uppercase;*/
-    font-family: 'instrument serif', serif;
-    font-size: 3rem!important;
-    font-style:italic;
-    font-weight: 700;
-    line-height: 3.8rem;
-    /* letter-spacing: 1px; */
-    text-transform: capitalize;
-/*    font-family: 'Inconsolata', monospace;*/
-}
+
 h1, h2, h3, h4, h5, h6, p {
     font-family: 'Inconsolata', monospace;
 }
@@ -178,9 +168,12 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1rem;
 }
 #valerie h1 {
-    font-size: 2.5rem;
+    font-size: 3rem!important;
     line-height: 2.5rem;
     overflow-y: hidden!important;
+    font-family: 'instrument serif', serif;
+    font-style: italic;
+    text-transform: capitalize;
 }
 #hyperlink {
     text-decoration: none;
@@ -303,11 +296,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 #proj-title {
     cursor: pointer;
-    /* font-family: 'kepler-std', serif; */
-    /* font-size: 2.5rem;
-    line-height: 3.1rem; */
-    /* font-weight: 300;
-    font-style: italic; */
     color: black;
     text-decoration: none;
     font-size: .9rem;
@@ -486,9 +474,11 @@ h1, h2, h3, h4, h5, h6, p {
         bottom: 0!important;
         transform: translate(-50%,0);
         position: absolute;
+        animation-duration: 3s;
     }
     .cont {
         width: 90%!important;
+        animation-duration: 4s;
     }
     /* .about .col1 {
         width: 45%!important;
@@ -524,6 +514,7 @@ h1, h2, h3, h4, h5, h6, p {
         bottom: 0!important;
         transform: translate(-50%,0);
         position: absolute;
+        animation-duration: 3s;
 
     }
     .projects {
@@ -538,10 +529,11 @@ h1, h2, h3, h4, h5, h6, p {
     .cont {
         width: 90%;
         height: auto;
-        top: 50%;
+        top: 52%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -48%);
         overflow-y: hidden;
+        animation-duration: 5s;
     }
     #homefoot {
         width: 90%;
