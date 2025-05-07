@@ -3,11 +3,11 @@
     padding: 0;
 }
 body {
-    background-color: #1a1918;
+    background-color: #1f1f1f;
     width: 100vw;
     height: 100%;
     font-family: 'inconsolata', monospace;
-    color: #fffafa;
+    color: rgb(244, 243, 230);
     overflow-x: hidden!important;
 }
 .kepler {
@@ -20,6 +20,10 @@ body {
 .navcont, #panelcont, .footercont {
     text-transform: capitalize;
 }
+.flexrow {
+    display: flex;
+    flex-direction: row;
+}
 #o,#x {
     display: none!important;
 }
@@ -28,7 +32,7 @@ p, ul, li {
     line-height: 1.3rem;
 }
 a {
-    color: #fffafa;
+    color: rgb(244, 243, 230);
 }
 a:hover {
     text-decoration: line-through!important;
@@ -38,8 +42,7 @@ a:hover {
 nav {
     height: 10vh;
     width: 100%;
-    background-color: #000000;
-/*    opacity: 0.75;*/
+    background-color: #1a1918;
     display: block;
     z-index: 1;
     top: 0;
@@ -48,14 +51,14 @@ nav {
 .navcont2 {
     display: flex;
     height: 10vh;
-    width: 65%;
-    margin: 0 17.5%;
+    width: 55%;
+    margin: 0 22.5%;
     justify-content: space-between;
     z-index: 10000;
     align-items: center;
 }
 .navleft p, .navleft a, .navright p, .navright a {
-    color: #fffafa;
+    color: rgb(244, 243, 230);
     text-decoration: none;
 }
 nav div {
@@ -72,10 +75,10 @@ nav div {
     transform: translateX(-50%);
 }
 #val a, #val a:hover {
-    text-decoration: none;
+    text-decoration: none!important;
 }
 .sun, .moon {
-    color: #fffafa;
+    color: rgb(244, 243, 230);
 }
 .panel {
     display: none;
@@ -97,7 +100,7 @@ body {
 }
 /* ----------------------- */
 #abtpg .about {
-    height: auto%;
+    height: auto;
     width: 70%; 
     display: flex;
     /* margin-top: 10vh; */
@@ -127,7 +130,7 @@ body {
 }
 #abtpg .footer {
     height: 20vh;
-    background-color: #000000;
+    background-color: #1a1918;
     width: 100%;
     position: absolute;
     bottom: 0!important;
@@ -150,7 +153,7 @@ body {
 .footer {
     margin-top: 5rem;
     height: 20vh;
-    background-color: #000000;
+    background-color: #000;
     width: 100%;
     position: relative!important;
     bottom: 0;
@@ -184,13 +187,147 @@ body {
 
 
 /*project*/
+#hmw {
+    width: 80%;
+    padding: 48px 10%;
+    background-color: #282828;
+    border-radius: 8px;
+    margin-top: 24px;
+}
+.logify-col {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.logify-sub-col {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    margin-right: 24px;
+    background-color: #282828;
+    border-radius: 8px;
+}
+.logify-ssub-col {
+    width: 100%;
+}
+.logify-sub-col:last-of-type {
+    margin-right: 0px;
+}
+.logify-cont {
+    background-color: rgb(244, 243, 230,0.8);
+    color: #000;
+    width: auto;
+    max-width: 85%;
+    padding: 12px;
+    margin: 24px 0;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+#left {
+    width: 20%;
+}
+.logify-layout3 {
+    /* justify-content: space-around; */
+    padding: 3rem;
+    /* .flexrow {
+        justify-content: space-around;
+    } */
+    .logify-cont {
+        margin: 0 24px 24px 0;
+        width: 80%;
+    }
+    .logify-cont b {
+        width: 100%;
+    }
+}
+.list .circle {
+    width: 32px!important;
+    height: 32px!important;
+    background-color: rgb(201, 201, 201,0.25);
+    color: #fff;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 100%;
+    p {
+        width: 32px;
+        text-align: center;
+        line-height: 32px;
+        font-weight: 700;
+    }
+    
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    margin-bottom: 1%;
+}
+.list p {
+    width: 100%;
+}
+.listcont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+.dtgrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between!important;
+    width: 100%;
+    .dtgriditem {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        justify-content: space-between;
+        background-color: #282828;
+        border-radius: 8px;
+        padding: 2.5%;
+        margin-bottom: 2.5%;
+    }
+    ul {
+        width: 75%;
+        li {
+            margin-bottom: .5rem;
+            width: auto;
+            min-width: 85%;
+            text-align: left;
+        }
+    }
+    .circle {
+        width: 32px!important;
+        height: 32px!important;
+        background-color: rgb(201, 201, 201,0.25);
+        color: #fff;
+        margin-right: 5%;
+        margin-bottom: 1rem;
+        border-radius: 100%;
+        p {
+            width: 32px;
+            text-align: center;
+            line-height: 32px;
+            font-weight: 700;
+        }
+    }
+    .flexrow {
+        justify-content: space-between;
+    }
+    .flexrow b {
+        width: 30%;
+    }
+    }
+
 .hero {
     width: 100%;
     /* padding-top: 10vh; */
-    height: 50vh;
+    height: 30vh;
     position: relative;
     object-fit: cover;
     overflow: hidden;
+    -webkit-mask-image: linear-gradient(#333333, transparent);
+    mask-image: linear-gradient(#333333, transparent);
+    background-color: white;
 }
 .hero video {
     object-fit: cover;
@@ -224,8 +361,8 @@ body {
     transform: translateY(-50%);
 }
 .width {
-    width: 65%;
-    margin: 0 17.5%;
+    width: 50%;
+    margin: 0 25%;
 }
 .hero-cont {
     position: absolute;
@@ -257,19 +394,24 @@ body {
     line-height: 3.2rem;
 }
 .project-desc {
+    margin-top: -3rem;
     /* display: flex; */
-    padding: 5rem 0!important;
+    /* padding: 5rem 0!important; */
     /* justify-content: space-between; */
     align-items: center;
-    border-bottom: 2px dashed #fffafa;
+    /* border-bottom: 2px dashed rgb(244, 243, 230); */
     text-transform: capitalize;
 }
+.eyebrow {
+    margin-bottom: 4px;
+    font-size: 20px!important;
+}
 .project-desc h1 {
-    font-size: 2.8rem;
-    font-family: 'instrument serif', serif;
-    font-style: italic;
-    text-transform: capitalize;
-    font-weight: 400;
+    font-size: 36px;
+    font-family: 'inconsolota', monospace;
+    /* font-style: italic; */
+    /* text-transform: capitalize; */
+    font-weight: 700;
 }
 .project-desc > div {
     display: flex;
@@ -286,6 +428,11 @@ body {
 }
 .project-txt {
     margin-top: 5rem;
+}
+.proj-header {
+    margin-bottom: .5rem;
+    text-transform: capitalize;
+    font-size: 20px;
 }
 .proj-body {
     margin-bottom: 5rem;
@@ -337,7 +484,7 @@ body {
     transition-duration: 1s;
 }
 .project a {
-    color: #fffafa;
+    color: rgb(244, 243, 230);
 }
 li {
     list-style-position: outside;
@@ -393,6 +540,7 @@ figcaption {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 8px;
 }
 .dt-row-img-box {
     width: 100%;
@@ -416,7 +564,7 @@ figcaption {
     clear:right;
     border: 2px solid #aca297;
     text-align: center;
-    color: #fffafa;
+    color: rgb(244, 243, 230);
     margin-top: 20px;
     padding: 15px!important;
 }
@@ -469,6 +617,10 @@ figcaption {
         position:relative!important;
         margin-top: 10vh;
     }
+    .navright {
+        display: none;
+    }
+
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768px){
@@ -510,7 +662,7 @@ figcaption {
         display: block!important;
     }
     .panel {
-        background-color: #000000;
+        background-color: #1a1918;
         height: 101vh;
         width: 100%;
         position: fixed;
@@ -527,7 +679,7 @@ figcaption {
     }
     #panelcont a {
         text-decoration: none;
-        color: #fffafa;
+        color: rgb(244, 243, 230);
     }
     #panelcont a:hover {
         text-decoration: line-through;
@@ -535,6 +687,9 @@ figcaption {
     }
     #logify-bubble {
         height: 30%;
+    }
+    .navright {
+        display: none;
     }
 
 }
@@ -606,7 +761,7 @@ figcaption {
         display: block!important;
     }
     .panel {
-        background-color: #000000;
+        background-color: #1a1918;
         height: 101vh;
         width: 100%;
         position: fixed;
@@ -623,7 +778,7 @@ figcaption {
     }
     #panelcont a {
         text-decoration: none;
-        color: #fffafa;
+        color: rgb(244, 243, 230);
     }
     #panelcont a:hover {
         text-decoration: line-through;
@@ -706,6 +861,10 @@ figcaption {
         position:relative!important;
         margin-top: 10vh;
     }
+    .navright {
+        display: none;
+    }
+
 }
 
 

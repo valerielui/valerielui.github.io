@@ -1,7 +1,14 @@
             $(document).ready(function() {
                 // dark mode light mode
+                // get what mode user is in
+                var elementColor = $('.subcolor').css('color');
+
+                storeMode(function() {
+                    
+                });
+
+                // i think this can be a function where i save everything and then i can call it later on when i am trying to find what mode users are in
                 $('.mode').on('click', function() {
-                    var elementColor = $('.subcolor').css('color');
                     // changing to light mode
                     // if in dark mode
                     if (elementColor == 'rgb(255, 250, 250)') {
@@ -15,7 +22,7 @@
                         $('.sun').css('display','none');
                         $('.moon').css('display','block');
                         $('.project-desc').css('border-bottom-color', '#000000');
-                        $('.callout').css('border-left', '3px solid darkgray')
+                        $('.callout').css('border-left', '3px solid darkgray');
                         // $('.hero').css('background-color','#fefdfb');
                     } // if in light mode 
                     else if (elementColor != 'rgb(255, 250, 250)') {
@@ -23,7 +30,7 @@
                         $('.subcolor').css('color','#fffafa');
                         $('.midcolor').css('background-color', '#0d0d0c');
                         $('#nav3').css('color','#fffafa');
-                        $('a').css('color','white');
+                        $('a').css('color','#fffafa');
                         $('#abt1').css('border','1px dashed #fffafa');
                         $('.mode').css('color','#fffafa');
                         $('.sun').css('display','block');
@@ -31,7 +38,6 @@
                         $('.project-desc').css('border-bottom-color', '#fffafa');
                         $('.panel').css('background-color','#1a1918');
                         $('.callout').css('border-left', '3px solid lightgray')
-
                     };
                 });
             });
