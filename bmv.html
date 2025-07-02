@@ -1,7 +1,12 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PPWW083PS"></script>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PPWW083PS"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -9,274 +14,340 @@
 
           gtag('config', 'G-3PPWW083PS');
         </script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
-        <link rel="icon" href="assets/favicon.png">
+       <link rel="icon" href="assets/favicon.png">
         <link rel="stylesheet" href="https://use.typekit.net/pyi3esy.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Instrument+Serif:ital@0;1&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/7ed9debe52.js" crossorigin="anonymous"></script>
-        <meta name="viewport" content="width=device-width" initial-scale="1.0">
-        <link rel="stylesheet" type="text/css" href="cleaned-newnav.css">
-        <script src="modes.js"></script>
-        <title>the logify project | Valerie Lui</title>
-        <meta name="keywords" content="Valerie Lui, Valerie, USC, Valerie Lui USC, USC Marshall, Marshall School of Business, Daily Trojan, online projects editor, online projects, upright oats, upright">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="https://kit.fontawesome.com/7ed9debe52.js" crossorigin="anonymous"></script>
+        <title>Reimagining Nonprofit Portal Workflows for Self-Service Volunteer Management | Valerie Lui</title>
+        <meta name="keywords" content="Valerie Lui, Valerie, USC, Valerie Lui USC, USC Marshall, Marshall School of Business, Daily Trojan, Product Designer">
         <meta name="description" content="a digital receipt of my recent accomplishments :-)">
         <meta name="theme-color" content="#1a1918">
         <meta property="og:site_name" content="Valerie Lui">
-        <meta property="og:title" content="the logify project | Valerie Lui">
+        <meta property="og:title" content="Valerie Lui">
         <meta property="og:description" content="a digital receipt of my recent accomplishments :-)">
         <meta property="og:type" content="website">
         <meta property="og:image" content="assets/preview.jpg">
-        <!--        <meta property="og:url" content="https://valerielui.com/ox-stickers">-->
-        <meta name="robots" content="noindex">
-    </head>
-    
-    <body class="proj-cont maincolor" id="logify">
-        <nav>
-            <div class="navcont">
-                <div class="navcont2">
-                    <div class="navleft">
-                            <i class="fa-solid fa-bars burger subcolor" id="o"></i>
-                            <i class="fa-solid fa-x burger subcolor" id="x"></i>
-                    </div>
-                    <p id="val" class="kepler subcolor"><a href="/">valerie lui</a></p>
-                    
-                    <div class="navright">
-                        <p class="subcolor"><a href="/">work</a></p>
-                        <p class="subcolor"><a href="/about">about</a></p>
-                    </div>
-                </div>
-                
-            </div>
-        </nav>
+        <meta property="og:url" content="https://www.valerielui.com/">
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="locked.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/7ed9debe52.js" crossorigin="anonymous"></script>
+    <script src="mobilenav.js"></script>
+  </head>
+  <body>
+    <nav class="frame">
+        <div><i class="fa-solid fa-bars burger" id="o"></i>
+              <i class="fa-solid fa-x burger" id="x"></i></div>
+        <h1 class="text-wrapper"><a href="/">Valerie Lui</a></h1>
+        <div class="div" style="display: flex; flex-direction: row; height: 100%;">
+                    <a href="/"><div class="nav-btn"><span class="star" id="wstar">*</span>Work</div></a>
+                    <a href="/about"><div class="nav-btn"><span class="star" id="wstar">*</span>About</div></a></div>
+                    <!-- <a href="/about">about</a>
+                    <a href="/">work</a> -->
+        </div>
 
         <div class="panel maincolor">
-            <div id="panelcont" class="maincolor">
-                
-                <a class="subcolor" href="/">work</a>
-                <a class="subcolor" href="/about">about</a>
-                <a class="subcolor" href="mailto:hello@valerielui.com">/email</a>
-                <a class="subcolor" href="https://www.linkedin.com/in/valerie-lui/">/linkedin</a>
+            <div id="panelcont">
+                <a class="" href="/"><span class="star" id="wstar">*</span>Work</a>
+                <a class="" href="/about"><span class="star" id="wstar">*</span>About</a>
+                <a class="sociallink" href="mailto:hello@valerielui.com"><span class="star" id="wstar">*</span>/Email</a>
+                <a class="sociallink" href="https://www.linkedin.com/in/valerie-lui/"><span class="star" id="wstar">*</span>/LinkedIn</a>
             </div>
+            <div id="blur"></div>
         </div>
+      </nav>
+    <div class="BMV">
+      
+<div class="rectangle">
+      <img  src="assets/bmv/coordinator-dashboard.png" /></div>
+      <div class="frame-2">
+        <div class="frame-3">
+          <p class="p">Nonprofit Organization: Black Mama’s Village</p>
+          <p class="text-wrapper-3">Reimagining Nonprofit Portal Workflows for Self-Service Volunteer Management</p>
+        </div>
+        <div class="frame-4">
+          <div class="frame-5" style="height: 100%!important;">
+            <div class="text-wrapper-7" >Role</div>
+            <div class="text-wrapper-5">Experience<br />Strategist</div>
+          </div>
+          <div class="text-wrapper-6">*</div>
+          <div class="frame-6">
+            <div class="text-wrapper-7">Duration</div>
+            <div class="text-wrapper-8">Oct 2024</div>
+          </div>
+          <div class="text-wrapper-6">*</div>
+          <div class="frame-7" style="width: auto!important; height: 100%!important;">
+            <div class="text-wrapper-7">Tools</div>
+            <div class="text-wrapper-5">Stacker (No-code website builder)<br />Airtable</div>
+          </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="impact-frame">
+          <div class="impact-overlay">Project Impact</div>
+          <p class="for-volunteers">For Volunteers:</p>
+            <ul>
+              <li>Streamlined volunteer event management from fragmented multi-step process to intuitive self-service workflow</li>
+            </ul></p>
+            <p class="for-volunteers">For Admins:</p>
+            <ul>
+              <li>Reduced administrative burden on staff through automated volunteer management capabilities</li>
+              <li>Enhanced organizational efficiency with centralized volunteer data and communication tools</li>
+            </ul>
+          <!-- <div class="line"></div>
+          <div class="div-2">
+            <div class="text-wrapper-3">Jump to solution</div>
+             <img src="assets/double-arrow.svg">
+          </div> -->
+      </div>
+      <div class="frame-8">
+  <div class="frame-9">
+    <div class="text-wrapper-9">Background</div>
+    <h2 class="text-wrapper-10">
+      Black Mamas’s Village needed a smoother system to manage volunteers with their no-code CRM and reduce admin load.
+    </h2>
+    <p class="text-wrapper-8">
+      Black Mamas’s Village (BMV) is a nonprofit in Austin, TX, using Airtable and Stacker as their CRM. But its unintuitive UI in the CRM forced staff to manually support volunteers at every turn.
+      <br /><br />
+      As the sole designer, I partnered with the co-founder to tackle these gaps and turn the system into a self-serve portal that worked for everyone.
+    </p>
+    <div class="frame-9">
+      <img class="img" src="img/bmv/1.png" />
+      <div class="frame-10">
+        <p class="text-wrapper-9">BMV’s CRM that uses a Stacker front-end UI and Airtable backend database.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Discovery & Strategy -->
+  <div class="frame-9">
+    <div class="text-wrapper-9">Discovery & Strategy</div>
+    <h2 class="text-wrapper-10">Over 8 weeks, I led a collaborative discovery process with the co-founder.</h2>
+    <div class="text-wrapper-8">In our sessions, we:</div>
+    
+    <!-- Points 1-3 -->
+    <div class="frame-11">
+      <div class="div-wrapper"><div class="text-wrapper-11">1</div></div>
+      <div class="frame-12"><p class="text-wrapper-8">Mapped out user and admin pain points in Airtable and Stacker</p></div>
+    </div>
+    <div class="frame-11">
+      <div class="div-wrapper"><div class="text-wrapper-11">2</div></div>
+      <div class="frame-12"><p class="text-wrapper-8">Audited workflows to identify duplication and inefficiencies</p></div>
+    </div>
+    <div class="frame-11">
+      <div class="div-wrapper"><div class="text-wrapper-11">3</div></div>
+      <div class="frame-12"><p class="text-wrapper-8">Aligned on a streamlined, user-first portal vision</p></div>
+    </div>
+
+    <div class="frame-9">
+      <img class="img" src="img/bmv/2.png" />
+      <div class="frame-10">
+        <p class="text-wrapper-9">A future state screen flow I created for the coordinator persona</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="frame-wrapper">
+    <div class="frame-9">
+      <div class="text-wrapper-9">The Approach</div>
+      <h2 class="text-wrapper-10">
+        I had to be creative — creating an intuitive user experience with Stacker’s limited capabilities was not the easiest.
+      </h2>
+      <div class="text-wrapper-8">To tackle this, I:</div>
+      
+      <div class="frame-11">
+        <div class="div-wrapper"><div class="text-wrapper-12">1</div></div>
+        <div class="frame-12"><p class="text-wrapper-8">Designed new user flows and wireframes in Figma to visualize and test potential improvements.</p></div>
+      </div>
+      <div class="frame-11">
+        <div class="div-wrapper"><div class="text-wrapper-12">2</div></div>
+        <div class="frame-12"><p class="text-wrapper-13">Created sandbox pages directly in Stacker to validate these ideas with the co-founder before launching live changes.</p></div>
+      </div>
+      <div class="frame-11">
+        <div class="div-wrapper"><div class="text-wrapper-12">3</div></div>
+        <div class="frame-12">
+          <p class="text-wrapper-13">
+            Switched to a third-party form (which integrates with Stacker) for event creation, to allow conditional display of questions that are relevant, improving both admin and volunteer UX.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="frame-9">
+    <div class="text-wrapper-9">The Solution</div>
+    <h2 class="text-wrapper-10">
+      Working within Stacker’s no-code limitations, I created a streamlined, self-serve volunteer portal with two key focuses.
+    </h2>
+    <div class="text-wrapper-8">My key focuses were:</div>
+
+    <div class="frame-13">
+      <div class="frame-14">
+        <div class="div-wrapper"><div class="text-wrapper-11">1</div></div>
+        <div class="frame-10"><p class="text-wrapper-14">Allowing volunteers and coordinators to self manage events & registration</p></div>
+      </div>
+      <div class="frame-15">
+        <div class="div-wrapper"><div class="text-wrapper-11">2</div></div>
+        <div class="frame-10"><p class="text-wrapper-14">Eliminating volunteer guesswork by reframing critical information</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="frame-9">
+    <div class="priority-allowing-wrapper">
+      <p class="priority-allowing">Priority #1: Allowing volunteers and coordinators to self manage events & registration</p>
+    </div>
+    <div class="frame-16">
+      <p class="div-2">
+        <span class="span">#1.1<br /><br></span>
+        <span class="text-wrapper-15">Created a new <span class="emphasis">Coordinator Dashboard</span> page to allow coordinators to create, edit, cancel, and view all events they are coordinating</span>
+      </p>
+      <img class="rectangle-2" src="img/bmv/3.png" />
+    </div>
+    <div class="frame-16">
+      <p class="div-2">
+        <span class="span">#1.2<br /><<br>
+        <span class="text-wrapper-15">Configuring pre-filled <span class="emphasis">Cancel sign up emails</span>, defaulting email addressee, title, and body text</span>
+      </p>
+      <img class="rectangle-2" src="img/bmv/4.jpg" />
+    </div>
+  </div>
+
+  <div class="frame-9">
+    <div class="frame-18">
+      <div class="frame-19">
+        <p class="text-wrapper-17">Priority #2: Eliminating volunteer guesswork by reframing critical information on Volunteer Event Sign Up page</p>
+      </div>
+    </div>
+    <div class="frame-16">
+      <p class="div-3">
+        <span class="text-wrapper-18">#2.1<br /><br></span>
+        <span class="text-wrapper-15"><span class="emphasis">Re-configured field names & values on Volunteers’ Event Sign Up page</span> for conciseness and clarity</span>
+      </p>
+      <img class="frame-20 img" src="img/bmv/5.png" />
+    </div>
+    <div class="frame-16">
+      <p class="div-3">
+        <span class="text-wrapper-18">#2.2<br /><br></span>
+        <span class="text-wrapper-15"><span class="emphasis">Updated Volunteers’ Event Sign Up page to a table layout</span> to display more opportunities without scrolling</span>
+      </p>
+      <div class="comparison">
+        <div>
+            <p class="text-wrapper-18">BEFORE</p>
+            <img id="comparisonImage" class="img" src="img/bmv/6-after.png" />
+        </div>
+        <div>
+            <p class="text-wrapper-18">AFTER</p>
+            <img id="comparisonImage" class="img" src="img/bmv/6.png" />
+        </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="frame-9">
+    <div class="text-wrapper-9">The Impact</div>
+    <h2 class="text-wrapper-10">
+      Empowering volunteers and coordinators to self-serve significantly reduced admin load and boosted engagement.
+    </h2>
+    <p class="text-wrapper-8">With the new changes in the portal...</p>
+    <div class="frame-13">
+      <div class="frame-24">
+        <div class="frame-25">
+          <p class="volunteers-can-now"><span class="text-wrapper-23">Volunteers</span> <span class="text-wrapper-25">can now</span></p>
+          <p class="text-wrapper-26">Quickly see relevant events and sign up independently</p>
+        </div>
+      </div>
+      <div class="frame-26">
+        <div class="frame-25">
+          <p class="admins-can-now"><span class="text-wrapper-28">Admins</span> can now</p>
+          <p class="text-wrapper-26">Focus on growing program impact</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="frame-9">
+    <div class="text-wrapper-9">The Takeaway</div>
+    <h2 class="text-wrapper-10">
+      Designing within no-code constraints taught me how to find creative workarounds to deliver real user impact.
+    </h2>
+    <p class="this-project-was-my">
+      This project was my first time using Stacker and Airtable, and it taught me the
+      <span class="text-wrapper-30">power of designing within constraints</span>.<br /><br />
+      Working within a no-code platform meant I had to get creative with solutions. This included integrating FillOut to bypass Stacker’s form limitations, configuring new fields on the Airtable database to create user-friendly displays of information.<br /><br />
+      These creative workarounds let me build a <span class="text-wrapper-30">user-first experience</span> that directly supported BMV’s mission and freed up staff to do more good.
+    </p>
+  </div>
+</div>
+
+<script>
+    //   $('.burger').on('click', function() {
+    //                 var displayEl = $('.panel').css('display');
+    //                 if (displayEl == 'none') {
+    //                     $('.text-wrapper').css('display','none');
+    //                     $('.panel').css('display','block');
+    //                     $('.panel').css('animation','panelSlideIn 500ms ease-in-out;');
+    //                     $('body').css('overflow','hidden');
+    //                     $('#o').css('display','none');
+    //                     $('#x').css('display','block');
+    //                     $('#x').css('z-index','1000');
+    //                     $('.BMV').css('filter','blur(8px)');
+    //                     $('.frame').css('background-color','rgb(0,0,0,0)');
+    //                 } // close nav
+    //                 else if (displayEl == 'block') {
+    //                   $('.text-wrapper').css('display','block');
+    //                   $('.panel').css('display','none');  
+    //                   $('.panel').css('animation','panelSlideOut 500ms ease-in-out;');
+    //                     $('body').css('overflow','hidden');
+    //                     $('body').css('overflow','visible');
+    //                     $('#o').css('display','block');
+    //                     $('#x').css('display','none');
+    //                     $('.BMV').css('filter','blur(0px)');
+    //                 };
+    //         });
+
+    //   $(document).ready(function() {
+    //     function checkWindowSize() {
+    //         if ($(window).width() > 768) {
+    //             $('.panel').css('display','none');
+    //         } else {
+    //             $('.panel').css('display','block');
+    //         }
+    //     }
         
-        <section class="project dt">
-            <section class="hero">
-                <img src="assets/bmv.jpg">
-
-                <!-- <img src="assets/logifycover.jpg"> -->
-                <div class="width hero-cont">
-                    <!-- <h1 class="project-title subcolor">the logify project</h1> -->
-                </div>
-            </section>
-
-
-            <section class="project-desc width subcolor" style="margin-top: -2rem;">
-                <h3 style="font-weight: 400;">Black Mama's Village</h3>
-                <h1>Empowering Volunteer Coordination and Enhancing Actionable Data Capture</h1>
-                <div>
-                    <div class="project-spec flex">
-                    <div class="project-desc-col"><p class="subcolor"><b>role:</b><br>strategist</p></div><span>*</span>
-                    <div class="project-desc-col"><p class="subcolor"><b>category:</b><br>design thinking, human-centered design</p></div>
-                </div></div>
-            </section>
-            <section>
-                <section class="width bmv">
-                    <h2 class="proj-header">the problem</h2>
-                <p class="proj-body subcolor">Black Mama’s Village is a nonprofit based in Austin, TX, dedicated to supporting Black mothers through community-based programs. Their CRM built on Airtable and Stacker was functional but fragmented.<br><br>Volunteer workflows were inconsistent, data capture lacked structure, and coordinators struggled to manage events effectively. The executive team needed a system that could <b>scale operations, improve visibility, and empower more community members to take on leadership roles.</b></p>
-                <!-- <img class="proj-body" src="assets/#">
-                <figcaption>The current state of how volunteer oportunities were presented</figcaption> -->
-                </section>
-
-                <section class="width">
-                    <h2 class="proj-header subcolor">the process</h2>
-                    <p class="subcolor">Partnering directly with a member of the executive team, I scoped the project by identifying key pain points across three primary personas: volunteers, volunteer coordinators, and admins.
-                    <br><br>My process included:
-                </section>
-
-                <section class="width" style="margin-top: 0;">
-                    <div class="listcont">
-                        <div class="list">
-                            <div class="circle"><p>1</p></div>
-                            <p><b>Journey Mapping</b><br><br>Auditing existing user flows and created a journey map to surface friction points across 3 personas -- Volunteer, Volunteer Coordinator, Admin.</p>
-                        </div>
-                        <div class="list">
-                            <div class="circle"><p>2</p></div>
-                            <p><b>Persona-Driven Prioritization</b><br><br>Focusing first on the highest-impact workflows — volunteer discovery and coordinator oversight — while building in admin-level data visibility as a north star.</p>
-                        </div>
-                        <div class="list">
-                            <div class="circle"><p>3</p></div>
-                            <p><b>Workflow Redesign</b><br><br>Streamlined the end-to-end process of event discovery, sign-up, and management.</p>
-                        </div></div>
-                </section>
-
-                <section class="width" id="bmv">
-                    <h2 class="proj-header">The Solution</h2>
-                    <p class="subcolor margin48">I designed and implemented a set of system-wide enhancements focusing on two things:
-                    </p>
-                    <div>
-                        <p style="opacity: .7">Focus #1</p>
-                            <h3>Rethinking workflows for volunteers and coordinators</h3>
-                            <p>With admins’ key pain point of significant manual overhead in mind, I designed interactions in the coordinator and volunteer user journeys to give power to the user and reduce the number of responsibilities for the admin.</p>
-                        </div></section>
-                        <div class="stretched flex" style="margin-top: 2rem;">
-                            <div class="img-cont flex">
-                                <p><b>New Coordinator Dashboard page</b><br><br>Allowing coordinators to edit, cancel, and view all events they are coordinating</p>
-                                <div class="icon"><img src="assets/bmv/coordinator-dashboard.png">
-                            </div></div>
-                            <div class="img-cont flex">
-                                <p><b>Adding additional touchpoints to create volunteer opportunitites</b><br><br>Creating 2 buttons on homepage and Coordinator dashboard to create opportunities without reaching out to admins</p>
-                                <div class="icon"><img src="assets/bmv/coordinator-dashboard.png">
-                            </div></div>
-                            <div class="img-cont flex">
-                                <p><b>Configuring pre-filled "Cancel sign up" emails</b><br><br>Expanding volunteers' access to BMV's admins and easier cancellations with prefilled email addressee, title, and body text</p>
-                                <div class="icon"><img src="assets/bmv/cancel-email.png">
-                            </div></div>
-                        </div>
-                            <section></section>
-                    <section class="width">
-                    <div>
-                    <p style="opacity: .7">Focus #2</p>
-                        <h3>Eliminating volunteer guesswork by reframing critical information</h3>
-                        <p>Understanding that volunteers need quicker access to viewing opportunity information, I updated the layout to enable visibility into more opportunities in one view, and updated field names and values to be more volunteer-friendly.
-                        <br><br>For instance, reframing # of  volunteers needed to be a new single field called "Volunteers Needed", instead of showing the full capacity of events and the # of sign ups in two separate fields.</p></div></div>
-                </section>
-
-                <div class="stretched flex" style="margin-top: 2rem;">
-                    <div class="img-cont flex">
-                        <p><b>Before the redesign:</b><br>Card-based layout, complex fields requiring extra mental calculations</p>
-                        <div class="icon"><img src="assets/bmv/bmv-old-card.png">
-                    </div></div>
-                    <div class="img-cont flex">
-                        <p><b>After the redesign:</b><br>Table layout, intuitive field labels and streamlined opportunity information with no guesswork required</p>
-                    <div class="icon"><img src="assets/bmv/bmv-new-table.png"></div>
-                    
-                    </div>
-                
-                </div>
-
-                
-                <div class="bmv-col flex" style="margin-bottom: 5rem;">
-                    <!-- holds everything -->
-                    
-                    <!-- <div class="logify-sub-col">
-                        <p>Priority #1</p>
-                        <h3>Rethinking workflows for volunteers and coordinators</h3>
-                        <div class="logify-ssub-col flex">
-                            <div>
-                            <div class="icon"><img src="assets/uprightbg.jpg"></div>
-                        <!-- <h3>Coordinator Dashboard</h3> -->
-                        <!--<p>Creating a new Volunteer Coordinator page in the CRM</p></div>
-                        <div>
-                            <div class="icon"><img src="assets/uprightbg.jpg"></div>
-                        <h3>Coordinator Dashboard</h3> -->
-                        <!-- <p>Defaulting mailto: buttons with prefilled fields</p></div>
-                        <div>
-                            <div class="icon"><img src="assets/uprightbg.jpg"></div>
-                        <!-- <h3>Coordinator Dashboard</h3> -->
-                        <!-- <p>Created a single pane of glass view showing all volunteer opportunities, including unfilled events—giving coordinators actionable insights at a glance.</p></div>
-                        </div>
-                        
-                    </div> -->
-                    
-                    <!-- <div class="logify-sub-col" style="" >
-                        <div class="icon"><img src="assets/uprightbg.jpg"></div>
-                        <h3>Opportunity Detail Improvements</h3>
-                        <p>Enabled intuitive cancelation via mailto: buttons with prefilled data, improved filtering, and simplified event creation by disabling redundant paths.</p>
-                    </div>
-                    <div class="logify-sub-col">
-                        <div class="icon"><img src="assets/uprightbg.jpg"></div>
-                        <h3>New Feature Integration</h3>
-                        <p>Integrated volunteer event creation into the CRM and added two new entry points to access it — empowering more volunteers to step up as coordinators and easing admin bottlenecks to review, respond, and create new events.</p>
-                    </div> -->
-                </div>
-                <!-- <b class="subcolor">For older adults:</b>
-
-                <ul class="subcolor">
-                    <li>Over 80% interviewed expressed a strong desire to connect with family members outside of family gatherings and wanted more frequent communication</li>
-                    <li>Many also noted a concern of bothering their grandchildren if they were to reach out more frequently to them</li>
-                    <li>Most prefer physical, analog products rather than digital products as they find it easier to navigate, even when a digital version of the same product is available</li>
-                    <li>Older adults have also been seen to use grandchildren’s photos or family photos as phone backgrounds</li>
-                </ul><br><br><b class="subcolor">For college students:</b><ul class="proj-body subcolor" style="margin-bottom: 5rem!important;">
-                    <li>Over 90% interviewed expressed that they would document their lives using photos and videos
-                    </li>
-                    <li>Most mentioned involvement with extracurriculars and participation in activities outside of class as contributors to their busy schedules
-                    </li>
-                  
-                </ul> -->
-                  
-                <section class="width">
-                    <h2 class="proj-header subcolor">The Impact</h2>
-                    <p class="subcolor">These changes enabled the org to capture cleaner, more actionable data, boosted internal clarity, and reduced coordinator overhead. The executive team reported improved transparency and usability across the CRM.
-                    </p>
-                </section>
-               
-            </section>
-            
-                    
-        <footer class="footer midcolor">
-            <div class="footercont">
-                <p class="subcolor"><span class="kepler">let's connect!</span><br>
-                <a href="mailto:hello@valerielui.com" class="subcolor">email</a> / <a href="https://www.linkedin.com/in/valerie-lui/" class="subcolor">linkedin</a></p>
-            </div>
-</footer></section>
+    //     // Check on page load
+    //     checkWindowSize();
         
-        <script>
-            // $(document).ready(function() {
-            //     // dark mode light mode
-            //     $('.mode').on('click', function() {
-            //         var elementColor = $('.subcolor').css('color');
-            //         // changing to light mode
-            //         // if in dark mode
-            //         if (elementColor == 'rgb(255, 255, 255)') {
-            //             $('.maincolor').css('background-color','#dbd6d3');
-            //             $('.subcolor').css('color','#1a1918');
-            //             $('.midcolor').css('background-color', '#c6beb9');
-            //             $('#nav3').css('color','#1a1918');
-            //             $('a').css('color','#1a1918');
-            //             $('#abt1').css('border','1px dashed #1a1918');
-            //             $('.mode').css('color','#1a1918');
-            //             $('.sun').css('display','none');
-            //             $('.moon').css('display','block');
-            //             $('.project-desc').css('border-bottom-color', '#000000');
-            //             // $('.hero').css('background-color','#fefdfb');
-            //         } // if in light mode 
-            //         else if (elementColor != 'rgb(255, 255, 255)') {
-            //             $('.maincolor').css('background-color','#1a1918');
-            //             $('.subcolor').css('color','white');
-            //             $('.midcolor').css('background-color', '#0d0d0c');
-            //             $('#nav3').css('color','white');
-            //             $('a').css('color','white');
-            //             $('#abt1').css('border','1px dashed white');
-            //             $('.mode').css('color','white');
-            //             $('.sun').css('display','block');
-            //             $('.moon').css('display','none');
-            //             $('.project-desc').css('border-bottom-color', '#ffffff');
-            //             // $('.hero').css('background-color','#473C38');
-            //         };
-            //     });
-            // });
+    //     // Check on window resize
+    //     $(window).resize(function() {
+    //         checkWindowSize();
+    //     });
+    // });
+    </script>
 
-            // open nav
-            $('.burger').on('click', function() {
-                    var displayEl = $('.panel').css('display');
-                    if (displayEl == 'none') {
-                        $('.panel').css('display','block');
-                        $('body').css('overflow','hidden');
-                        $('#o').css('display','none');
-                        $('#x').css('display','block');
-                    } // close nav
-                    else if (displayEl == 'block') {
-                        $('.panel').css('display','none');                        $('body').css('overflow','hidden');
-                        $('body').css('overflow','visible');
-                        $('#o').css('display','block');
-                        $('#x').css('display','none');
-
-                    };
-                    
-                });
-        </script>
-    </body>
+        
+      
+    </div>
+    <div class="frame-27">
+        <div class="text-wrapper-31">Let’s Stay in Touch</div>
+        <div class="frame-28">
+          <a href="https://www.linkedin.com/in/valerie-lui/" target="_blank" rel="noopener noreferrer"
+            ><div class="text-wrapper-32">LinkedIn</div></a
+          >
+          <div class="text-wrapper-33">/</div>
+          <a href="mailto:hello@valerielui.com" target="_blank" rel="noopener noreferrer"
+            ><div class="text-wrapper-32">Email</div></a
+          >
+        </div>
+      </div>
+  </body>
 </html>
