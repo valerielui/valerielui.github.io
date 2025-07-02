@@ -404,6 +404,12 @@ body {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
+    .projimgcont {
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
     #homefoot {
         flex-direction: column;
         div, p {
